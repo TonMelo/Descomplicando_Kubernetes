@@ -15,6 +15,8 @@ de que ele não trata os contêineres diretamente, mas sim através de pods. Aba
 
 * **Services:** É uma forma de você expor a comunicação através de um ClusterIP, NodePort ou LoadBalancer para distribuir as requisições entre os diversos Pods daquele Deployment. Funciona como um balanceador de carga.
 
+## Instalação do Kind 
+
 Para estudo optei por instalar o kind para utilizar o k8s localmente. 
 
 [**Kind**](https://github.com/badtuxx/CertifiedContainersExpert/blob/main/DescomplicandoKubernetes/day-1/README.md#kind) 
