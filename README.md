@@ -14,3 +14,23 @@ de que ele não trata os contêineres diretamente, mas sim através de pods. Aba
 * **ReplicaSets:** É um objeto responsável por garantir a quantidade de pods em execução no nó;
 
 * **Services:** É uma forma de você expor a comunicação através de um ClusterIP, NodePort ou LoadBalancer para distribuir as requisições entre os diversos Pods daquele Deployment. Funciona como um balanceador de carga.
+
+Para estudo optei por instalar o kind para utilizar o k8s localmente. 
+
+[**Kind**](https://github.com/badtuxx/CertifiedContainersExpert/blob/main/DescomplicandoKubernetes/day-1/README.md#kind) 
+
+O Kind (Kubernetes in Docker) é uma alternativa para executar o Kubernetes num ambiente local para testes e aprendizado, mas não é recomendado para uso em produção.
+
+Como utilizo MAC, estou deixando abaixo as opções disponibilizadas no treinamento para instalaçao no MACBook. 
+
+Instalação no MacOS
+Para fazer a instalação no MacOS, execute o seguinte comando.
+
+sudo brew install kind
+  ou
+
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-darwin-amd64
+chmod +x ./kind
+mv ./kind /usr/bin/kind
+
+
