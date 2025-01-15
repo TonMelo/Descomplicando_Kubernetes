@@ -1,0 +1,13 @@
+# nome do arquivo meu primeiro cluster yaml
+# Criar um pod para deploy do Nginx 
+
+#cria um cluster k8s utilizando o kind
+#Criar um 1 node do control plane e 3 workers.
+
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes: 
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
